@@ -41,3 +41,19 @@ npm run dev    # run apps
 ```
 
 Open a browser windows at http://localhost:8080 to see the app.
+
+## Verify Envoy Setup
+
+** Note: Currently this does not work **
+
+You can verify your Envoy setup as follows:
+
+1. Go to the local copy of the server repo
+   [Movie Magic gRPC services](https://github.com/nareshbhatia/movie-magic-services-go)
+2. Run the following command.
+
+```shell
+buf curl --schema . --protocol grpcweb --http2-prior-knowledge http://localhost:8080/api/movie.v1.MovieService/ListMovies
+```
+
+It should print a list of movies in JSON format.

@@ -2,23 +2,20 @@
 // @generated from file models/common/v1/common.proto (package models.common.v1, syntax proto3)
 /* eslint-disable */
 
-import type { GenFile, GenMessage } from '@bufbuild/protobuf/codegenv1';
-import { fileDesc, messageDesc } from '@bufbuild/protobuf/codegenv1';
-import type { Message } from '@bufbuild/protobuf';
+import type { GenFile, GenMessage } from "@bufbuild/protobuf/codegenv1";
+import { fileDesc, messageDesc } from "@bufbuild/protobuf/codegenv1";
+import type { Message } from "@bufbuild/protobuf";
 
 /**
  * Describes the file models/common/v1/common.proto.
  */
-export const file_models_common_v1_common: GenFile =
-  /*@__PURE__*/
-  fileDesc(
-    'Ch1tb2RlbHMvY29tbW9uL3YxL2NvbW1vbi5wcm90bxIQbW9kZWxzLmNvbW1vbi52MSIzCgVJbWFnZRILCgN1cmwYASABKAkSDQoFd2lkdGgYAiABKAUSDgoGaGVpZ2h0GAMgASgFYgZwcm90bzM',
-  );
+export const file_models_common_v1_common: GenFile = /*@__PURE__*/
+  fileDesc("Ch1tb2RlbHMvY29tbW9uL3YxL2NvbW1vbi5wcm90bxIQbW9kZWxzLmNvbW1vbi52MSIzCgVJbWFnZRILCgN1cmwYASABKAkSDQoFd2lkdGgYAiABKAUSDgoGaGVpZ2h0GAMgASgFYgZwcm90bzM");
 
 /**
  * @generated from message models.common.v1.Image
  */
-export type Image = Message<'models.common.v1.Image'> & {
+export type Image = Message<"models.common.v1.Image"> & {
   /**
    * @generated from field: string url = 1;
    */
@@ -39,6 +36,6 @@ export type Image = Message<'models.common.v1.Image'> & {
  * Describes the message models.common.v1.Image.
  * Use `create(ImageSchema)` to create a new message.
  */
-export const ImageSchema: GenMessage<Image> =
-  /*@__PURE__*/
+export const ImageSchema: GenMessage<Image> = /*@__PURE__*/
   messageDesc(file_models_common_v1_common, 0);
+

@@ -2,36 +2,22 @@
 // @generated from file movie/v1/movie.proto (package movie.v1, syntax proto3)
 /* eslint-disable */
 
-import type {
-  GenEnum,
-  GenFile,
-  GenMessage,
-  GenService,
-} from '@bufbuild/protobuf/codegenv1';
-import {
-  enumDesc,
-  fileDesc,
-  messageDesc,
-  serviceDesc,
-} from '@bufbuild/protobuf/codegenv1';
-import type { Certificate, Movie } from '../../models/movie/v1/movie_pb';
-import { file_models_movie_v1_movie } from '../../models/movie/v1/movie_pb';
-import type { Message } from '@bufbuild/protobuf';
+import type { GenEnum, GenFile, GenMessage, GenService } from "@bufbuild/protobuf/codegenv1";
+import { enumDesc, fileDesc, messageDesc, serviceDesc } from "@bufbuild/protobuf/codegenv1";
+import type { Certificate, Movie } from "../../models/movie/v1/movie_pb";
+import { file_models_movie_v1_movie } from "../../models/movie/v1/movie_pb";
+import type { Message } from "@bufbuild/protobuf";
 
 /**
  * Describes the file movie/v1/movie.proto.
  */
-export const file_movie_v1_movie: GenFile =
-  /*@__PURE__*/
-  fileDesc(
-    'ChRtb3ZpZS92MS9tb3ZpZS5wcm90bxIIbW92aWUudjEiOwoMRmlsdGVyUGFyYW1zEisKBWNlcnRzGAEgAygOMhwubW9kZWxzLm1vdmllLnYxLkNlcnRpZmljYXRlIioKCFBhZ2VTcGVjEgwKBHBhZ2UYASABKAUSEAoIcGVyX3BhZ2UYAiABKAUihgEKEUxpc3RNb3ZpZXNSZXF1ZXN0EicKB2ZpbHRlcnMYASABKAsyFi5tb3ZpZS52MS5GaWx0ZXJQYXJhbXMSIQoEc29ydBgCIAEoDjITLm1vdmllLnYxLlNvcnRQYXJhbRIlCglwYWdlX3NwZWMYAyABKAsyEi5tb3ZpZS52MS5QYWdlU3BlYyKMAQoOUGFnaW5hdGlvbkluZm8SEwoLdG90YWxfcGFnZXMYASABKAUSEwoLdG90YWxfaXRlbXMYAiABKAUSDAoEcGFnZRgDIAEoBRIQCghwZXJfcGFnZRgEIAEoBRIVCg1oYXNfbmV4dF9wYWdlGAUgASgIEhkKEWhhc19wcmV2aW91c19wYWdlGAYgASgIImkKEkxpc3RNb3ZpZXNSZXNwb25zZRImCgZtb3ZpZXMYASADKAsyFi5tb2RlbHMubW92aWUudjEuTW92aWUSKwoJcGFnZV9pbmZvGAIgASgLMhgubW92aWUudjEuUGFnaW5hdGlvbkluZm8qQAoJU29ydFBhcmFtEhoKFlNPUlRfUEFSQU1fVU5TUEVDSUZJRUQQABIXChNTT1JUX1BBUkFNX1JBTktfQVNDEAEyWQoMTW92aWVTZXJ2aWNlEkkKCkxpc3RNb3ZpZXMSGy5tb3ZpZS52MS5MaXN0TW92aWVzUmVxdWVzdBocLm1vdmllLnYxLkxpc3RNb3ZpZXNSZXNwb25zZSIAYgZwcm90bzM',
-    [file_models_movie_v1_movie],
-  );
+export const file_movie_v1_movie: GenFile = /*@__PURE__*/
+  fileDesc("ChRtb3ZpZS92MS9tb3ZpZS5wcm90bxIIbW92aWUudjEiOwoMRmlsdGVyUGFyYW1zEisKBWNlcnRzGAEgAygOMhwubW9kZWxzLm1vdmllLnYxLkNlcnRpZmljYXRlIioKCFBhZ2VTcGVjEgwKBHBhZ2UYASABKAUSEAoIcGVyX3BhZ2UYAiABKAUihgEKEUxpc3RNb3ZpZXNSZXF1ZXN0EicKB2ZpbHRlcnMYASABKAsyFi5tb3ZpZS52MS5GaWx0ZXJQYXJhbXMSIQoEc29ydBgCIAEoDjITLm1vdmllLnYxLlNvcnRQYXJhbRIlCglwYWdlX3NwZWMYAyABKAsyEi5tb3ZpZS52MS5QYWdlU3BlYyKMAQoOUGFnaW5hdGlvbkluZm8SEwoLdG90YWxfcGFnZXMYASABKAUSEwoLdG90YWxfaXRlbXMYAiABKAUSDAoEcGFnZRgDIAEoBRIQCghwZXJfcGFnZRgEIAEoBRIVCg1oYXNfbmV4dF9wYWdlGAUgASgIEhkKEWhhc19wcmV2aW91c19wYWdlGAYgASgIImkKEkxpc3RNb3ZpZXNSZXNwb25zZRImCgZtb3ZpZXMYASADKAsyFi5tb2RlbHMubW92aWUudjEuTW92aWUSKwoJcGFnZV9pbmZvGAIgASgLMhgubW92aWUudjEuUGFnaW5hdGlvbkluZm8qQAoJU29ydFBhcmFtEhoKFlNPUlRfUEFSQU1fVU5TUEVDSUZJRUQQABIXChNTT1JUX1BBUkFNX1JBTktfQVNDEAEyWQoMTW92aWVTZXJ2aWNlEkkKCkxpc3RNb3ZpZXMSGy5tb3ZpZS52MS5MaXN0TW92aWVzUmVxdWVzdBocLm1vdmllLnYxLkxpc3RNb3ZpZXNSZXNwb25zZSIAYgZwcm90bzM", [file_models_movie_v1_movie]);
 
 /**
  * @generated from message movie.v1.FilterParams
  */
-export type FilterParams = Message<'movie.v1.FilterParams'> & {
+export type FilterParams = Message<"movie.v1.FilterParams"> & {
   /**
    * @generated from field: repeated models.movie.v1.Certificate certs = 1;
    */
@@ -42,14 +28,13 @@ export type FilterParams = Message<'movie.v1.FilterParams'> & {
  * Describes the message movie.v1.FilterParams.
  * Use `create(FilterParamsSchema)` to create a new message.
  */
-export const FilterParamsSchema: GenMessage<FilterParams> =
-  /*@__PURE__*/
+export const FilterParamsSchema: GenMessage<FilterParams> = /*@__PURE__*/
   messageDesc(file_movie_v1_movie, 0);
 
 /**
  * @generated from message movie.v1.PageSpec
  */
-export type PageSpec = Message<'movie.v1.PageSpec'> & {
+export type PageSpec = Message<"movie.v1.PageSpec"> & {
   /**
    * @generated from field: int32 page = 1;
    */
@@ -65,14 +50,13 @@ export type PageSpec = Message<'movie.v1.PageSpec'> & {
  * Describes the message movie.v1.PageSpec.
  * Use `create(PageSpecSchema)` to create a new message.
  */
-export const PageSpecSchema: GenMessage<PageSpec> =
-  /*@__PURE__*/
+export const PageSpecSchema: GenMessage<PageSpec> = /*@__PURE__*/
   messageDesc(file_movie_v1_movie, 1);
 
 /**
  * @generated from message movie.v1.ListMoviesRequest
  */
-export type ListMoviesRequest = Message<'movie.v1.ListMoviesRequest'> & {
+export type ListMoviesRequest = Message<"movie.v1.ListMoviesRequest"> & {
   /**
    * @generated from field: movie.v1.FilterParams filters = 1;
    */
@@ -93,14 +77,13 @@ export type ListMoviesRequest = Message<'movie.v1.ListMoviesRequest'> & {
  * Describes the message movie.v1.ListMoviesRequest.
  * Use `create(ListMoviesRequestSchema)` to create a new message.
  */
-export const ListMoviesRequestSchema: GenMessage<ListMoviesRequest> =
-  /*@__PURE__*/
+export const ListMoviesRequestSchema: GenMessage<ListMoviesRequest> = /*@__PURE__*/
   messageDesc(file_movie_v1_movie, 2);
 
 /**
  * @generated from message movie.v1.PaginationInfo
  */
-export type PaginationInfo = Message<'movie.v1.PaginationInfo'> & {
+export type PaginationInfo = Message<"movie.v1.PaginationInfo"> & {
   /**
    * total number of pages
    *
@@ -148,14 +131,13 @@ export type PaginationInfo = Message<'movie.v1.PaginationInfo'> & {
  * Describes the message movie.v1.PaginationInfo.
  * Use `create(PaginationInfoSchema)` to create a new message.
  */
-export const PaginationInfoSchema: GenMessage<PaginationInfo> =
-  /*@__PURE__*/
+export const PaginationInfoSchema: GenMessage<PaginationInfo> = /*@__PURE__*/
   messageDesc(file_movie_v1_movie, 3);
 
 /**
  * @generated from message movie.v1.ListMoviesResponse
  */
-export type ListMoviesResponse = Message<'movie.v1.ListMoviesResponse'> & {
+export type ListMoviesResponse = Message<"movie.v1.ListMoviesResponse"> & {
   /**
    * @generated from field: repeated models.movie.v1.Movie movies = 1;
    */
@@ -171,8 +153,7 @@ export type ListMoviesResponse = Message<'movie.v1.ListMoviesResponse'> & {
  * Describes the message movie.v1.ListMoviesResponse.
  * Use `create(ListMoviesResponseSchema)` to create a new message.
  */
-export const ListMoviesResponseSchema: GenMessage<ListMoviesResponse> =
-  /*@__PURE__*/
+export const ListMoviesResponseSchema: GenMessage<ListMoviesResponse> = /*@__PURE__*/
   messageDesc(file_movie_v1_movie, 4);
 
 /**
@@ -193,8 +174,7 @@ export enum SortParam {
 /**
  * Describes the enum movie.v1.SortParam.
  */
-export const SortParamSchema: GenEnum<SortParam> =
-  /*@__PURE__*/
+export const SortParamSchema: GenEnum<SortParam> = /*@__PURE__*/
   enumDesc(file_movie_v1_movie, 0);
 
 /**
@@ -207,8 +187,10 @@ export const MovieService: GenService<{
    * @generated from rpc movie.v1.MovieService.ListMovies
    */
   listMovies: {
-    methodKind: 'unary';
+    methodKind: "unary";
     input: typeof ListMoviesRequestSchema;
     output: typeof ListMoviesResponseSchema;
-  };
-}> = /*@__PURE__*/ serviceDesc(file_movie_v1_movie, 0);
+  },
+}> = /*@__PURE__*/
+  serviceDesc(file_movie_v1_movie, 0);
+

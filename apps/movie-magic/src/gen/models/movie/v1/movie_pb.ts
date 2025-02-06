@@ -2,30 +2,22 @@
 // @generated from file models/movie/v1/movie.proto (package models.movie.v1, syntax proto3)
 /* eslint-disable */
 
-import type {
-  GenEnum,
-  GenFile,
-  GenMessage,
-} from '@bufbuild/protobuf/codegenv1';
-import { enumDesc, fileDesc, messageDesc } from '@bufbuild/protobuf/codegenv1';
-import type { Image } from '../../common/v1/common_pb';
-import { file_models_common_v1_common } from '../../common/v1/common_pb';
-import type { Message } from '@bufbuild/protobuf';
+import type { GenEnum, GenFile, GenMessage } from "@bufbuild/protobuf/codegenv1";
+import { enumDesc, fileDesc, messageDesc } from "@bufbuild/protobuf/codegenv1";
+import type { Image } from "../../common/v1/common_pb";
+import { file_models_common_v1_common } from "../../common/v1/common_pb";
+import type { Message } from "@bufbuild/protobuf";
 
 /**
  * Describes the file models/movie/v1/movie.proto.
  */
-export const file_models_movie_v1_movie: GenFile =
-  /*@__PURE__*/
-  fileDesc(
-    'Chttb2RlbHMvbW92aWUvdjEvbW92aWUucHJvdG8SD21vZGVscy5tb3ZpZS52MSIzCgpDYXN0TWVtYmVyEhEKCXBlcnNvbl9pZBgBIAEoCRISCgpjaGFyYWN0ZXJzGAIgAygJIj4KDlJhdGluZ3NTdW1tYXJ5EhgKEGFnZ3JlZ2F0ZV9yYXRpbmcYASABKAESEgoKdm90ZV9jb3VudBgCIAEoBSLMAgoFTW92aWUSCgoCaWQYASABKAkSDAoEbmFtZRgCIAEoCRITCgtkZXNjcmlwdGlvbhgDIAEoCRIpCgRjYXN0GAQgAygLMhsubW9kZWxzLm1vdmllLnYxLkNhc3RNZW1iZXISMQoLY2VydGlmaWNhdGUYBSABKA4yHC5tb2RlbHMubW92aWUudjEuQ2VydGlmaWNhdGUSDgoGZ2VucmVzGAYgAygJEiYKBWltYWdlGAcgASgLMhcubW9kZWxzLmNvbW1vbi52MS5JbWFnZRIMCgRyYW5rGAggASgFEjgKD3JhdGluZ3Nfc3VtbWFyeRgJIAEoCzIfLm1vZGVscy5tb3ZpZS52MS5SYXRpbmdzU3VtbWFyeRIUCgxyZWxlYXNlX3llYXIYCiABKAUSDwoHcnVudGltZRgLIAEoBRIPCgd0YWdsaW5lGAwgASgJKo8BCgtDZXJ0aWZpY2F0ZRIbChdDRVJUSUZJQ0FURV9VTlNQRUNJRklFRBAAEhEKDUNFUlRJRklDQVRFX0cQARISCg5DRVJUSUZJQ0FURV9OUhACEhUKEUNFUlRJRklDQVRFX1BHXzEzEAMSEgoOQ0VSVElGSUNBVEVfUEcQBBIRCg1DRVJUSUZJQ0FURV9SEAViBnByb3RvMw',
-    [file_models_common_v1_common],
-  );
+export const file_models_movie_v1_movie: GenFile = /*@__PURE__*/
+  fileDesc("Chttb2RlbHMvbW92aWUvdjEvbW92aWUucHJvdG8SD21vZGVscy5tb3ZpZS52MSIzCgpDYXN0TWVtYmVyEhEKCXBlcnNvbl9pZBgBIAEoCRISCgpjaGFyYWN0ZXJzGAIgAygJIj4KDlJhdGluZ3NTdW1tYXJ5EhgKEGFnZ3JlZ2F0ZV9yYXRpbmcYASABKAESEgoKdm90ZV9jb3VudBgCIAEoBSLMAgoFTW92aWUSCgoCaWQYASABKAkSDAoEbmFtZRgCIAEoCRITCgtkZXNjcmlwdGlvbhgDIAEoCRIpCgRjYXN0GAQgAygLMhsubW9kZWxzLm1vdmllLnYxLkNhc3RNZW1iZXISMQoLY2VydGlmaWNhdGUYBSABKA4yHC5tb2RlbHMubW92aWUudjEuQ2VydGlmaWNhdGUSDgoGZ2VucmVzGAYgAygJEiYKBWltYWdlGAcgASgLMhcubW9kZWxzLmNvbW1vbi52MS5JbWFnZRIMCgRyYW5rGAggASgFEjgKD3JhdGluZ3Nfc3VtbWFyeRgJIAEoCzIfLm1vZGVscy5tb3ZpZS52MS5SYXRpbmdzU3VtbWFyeRIUCgxyZWxlYXNlX3llYXIYCiABKAUSDwoHcnVudGltZRgLIAEoBRIPCgd0YWdsaW5lGAwgASgJKo8BCgtDZXJ0aWZpY2F0ZRIbChdDRVJUSUZJQ0FURV9VTlNQRUNJRklFRBAAEhEKDUNFUlRJRklDQVRFX0cQARISCg5DRVJUSUZJQ0FURV9OUhACEhUKEUNFUlRJRklDQVRFX1BHXzEzEAMSEgoOQ0VSVElGSUNBVEVfUEcQBBIRCg1DRVJUSUZJQ0FURV9SEAViBnByb3RvMw", [file_models_common_v1_common]);
 
 /**
  * @generated from message models.movie.v1.CastMember
  */
-export type CastMember = Message<'models.movie.v1.CastMember'> & {
+export type CastMember = Message<"models.movie.v1.CastMember"> & {
   /**
    * @generated from field: string person_id = 1;
    */
@@ -41,14 +33,13 @@ export type CastMember = Message<'models.movie.v1.CastMember'> & {
  * Describes the message models.movie.v1.CastMember.
  * Use `create(CastMemberSchema)` to create a new message.
  */
-export const CastMemberSchema: GenMessage<CastMember> =
-  /*@__PURE__*/
+export const CastMemberSchema: GenMessage<CastMember> = /*@__PURE__*/
   messageDesc(file_models_movie_v1_movie, 0);
 
 /**
  * @generated from message models.movie.v1.RatingsSummary
  */
-export type RatingsSummary = Message<'models.movie.v1.RatingsSummary'> & {
+export type RatingsSummary = Message<"models.movie.v1.RatingsSummary"> & {
   /**
    * @generated from field: double aggregate_rating = 1;
    */
@@ -64,14 +55,13 @@ export type RatingsSummary = Message<'models.movie.v1.RatingsSummary'> & {
  * Describes the message models.movie.v1.RatingsSummary.
  * Use `create(RatingsSummarySchema)` to create a new message.
  */
-export const RatingsSummarySchema: GenMessage<RatingsSummary> =
-  /*@__PURE__*/
+export const RatingsSummarySchema: GenMessage<RatingsSummary> = /*@__PURE__*/
   messageDesc(file_models_movie_v1_movie, 1);
 
 /**
  * @generated from message models.movie.v1.Movie
  */
-export type Movie = Message<'models.movie.v1.Movie'> & {
+export type Movie = Message<"models.movie.v1.Movie"> & {
   /**
    * @generated from field: string id = 1;
    */
@@ -137,8 +127,7 @@ export type Movie = Message<'models.movie.v1.Movie'> & {
  * Describes the message models.movie.v1.Movie.
  * Use `create(MovieSchema)` to create a new message.
  */
-export const MovieSchema: GenMessage<Movie> =
-  /*@__PURE__*/
+export const MovieSchema: GenMessage<Movie> = /*@__PURE__*/
   messageDesc(file_models_movie_v1_movie, 2);
 
 /**
@@ -179,6 +168,6 @@ export enum Certificate {
 /**
  * Describes the enum models.movie.v1.Certificate.
  */
-export const CertificateSchema: GenEnum<Certificate> =
-  /*@__PURE__*/
+export const CertificateSchema: GenEnum<Certificate> = /*@__PURE__*/
   enumDesc(file_models_movie_v1_movie, 0);
+
