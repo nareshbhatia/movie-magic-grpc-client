@@ -1,9 +1,11 @@
 {
   "cSpell.words": [
     "autodocs",
+    "bufbuild",
     "clsx",
     "codegen",
     "commitlint",
+    "connectrpc",
     "copyfiles",
     "deepmerge",
     "dword",

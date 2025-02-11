@@ -1,12 +1,25 @@
-import { MOVIE_REQUEST_URL } from '../utils/constants';
+// import { MOVIE_REQUEST_URL } from '../utils/constants';
+import { movies } from '../mocks/movies';
+import { MovieService } from '@/gen/movie/v1/movie_pb';
 import type { DescService } from '@bufbuild/protobuf';
 import type { Client } from '@connectrpc/connect';
-import { createClient } from '@connectrpc/connect';
-import { createGrpcWebTransport } from '@connectrpc/connect-web';
+import { createRouterTransport, createClient } from '@connectrpc/connect';
+// import { createGrpcWebTransport } from '@connectrpc/connect-web';
+
 import { useMemo } from 'react';
 
-const transport = createGrpcWebTransport({
-  baseUrl: MOVIE_REQUEST_URL,
+// const transport = createGrpcWebTransport({
+//   baseUrl: MOVIE_REQUEST_URL,
+// });
+
+// mock transport
+const transport = createRouterTransport(({ service }) => {
+  service(MovieService, {
+    listMovies: () => ({
+      movies,
+      total: movies.length,
+    }),
+  });
 });
 
 /**
